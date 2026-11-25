@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="تواصل مع لين عبدالرحمن هلال لمناقشة الأفكار والمشاريع.">
+  <title>تواصل معي | لين عبدالرحمن هلال</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="لين عبدالرحمن هلال - الصفحة الرئيسية">
+        <span class="brand__mark" aria-hidden="true">L.H<span class="brand__star">✦</span></span>
+        <span class="brand__name">لين عبدالرحمن هلال</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="فتح قائمة التنقل">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="التنقل الرئيسي">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html#home">الرئيسية</a></li>
+          <li><a class="nav-link" href="projects.html">مشاريعي</a></li>
+          <li><a class="nav-link" href="index.html#about">نبذة عني</a></li>
+          <li><a class="nav-link" href="index.html#skills">مهاراتي</a></li>
+          <li><a class="nav-link is-active" href="contact.html" aria-current="page">تواصلي</a></li>
+          <li><a class="nav-link nav-link--cta" href="contact.html">لنتواصل <span aria-hidden="true">✉</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero page-hero--contact" aria-labelledby="page-title">
+      <div class="page-hero__shape" aria-hidden="true"></div>
+      <div class="container page-hero__inner" data-reveal>
+        <h1 class="page-hero__title" id="page-title">أهلًا بك!</h1>
+        <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>لنتواصل</p>
+        <p class="page-hero__lead">يسعدني أن أسمع عن أفكارك ومشاريعك. اكتب رسالتك وسأكون سعيدة بمناقشتها.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section" aria-label="نموذج التواصل">
+      <div class="container contact__grid">
+        <div class="contact__aside" data-reveal>
+          <div class="glass contact__card">
+            <span class="contact__card-icon" aria-hidden="true">✦</span>
+            <h2 class="contact__card-title">ماذا أكتب في الرسالة؟</h2>
+            <p>يمكنك ذكر فكرة المشروع، أو نوع الواجهة التي تود تصميمها، أو أي سؤال حول عملي السابق.</p>
+            <ul class="contact__points">
+              <li><span aria-hidden="true">◈</span> فكرة أو مشروع جديد</li>
+              <li><span aria-hidden="true">◈</span> استفسار عن المشاريع المعروضة</li>
+              <li><span aria-hidden="true">◈</span> اقتراح تعاون</li>
+            </ul>
+          </div>
+          <p class="contact__hint">طالبة جامعية في تخصص التصميم والبرمجيات — أهتم بتصميم واجهات المستخدم وتجارب الويب العصرية.</p>
+        </div>
+
+        <div class="contact__form-wrap glass" data-reveal>
+          <h2 class="contact__form-title">أرسل رسالة</h2>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="contact-name">الاسم</label>
+              <input type="text" id="contact-name" name="name" autocomplete="name" placeholder="اكتب اسمك" required>
+            </div>
+            <div class="field">
+              <label for="contact-email">البريد الإلكتروني</label>
+              <input type="email" id="contact-email" name="email" autocomplete="email" placeholder="name@example.com" required>
+            </div>
+            <div class="field">
+              <label for="contact-message">الرسالة</label>
+              <textarea id="contact-message" name="message" rows="6" placeholder="اكتب رسالتك هنا..." required></textarea>
+            </div>
+
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+
+            <div class="form-actions">
+              <button class="btn btn--primary" type="submit">جهّز الرسالة <span aria-hidden="true">←</span></button>
+              <button class="btn btn--ghost" type="button" id="copy-message" disabled>نسخ الرسالة</button>
+            </div>
+            <p class="form-note">لا توجد خدمة إرسال مفعّلة حالياً؛ النموذج يجهّز نص رسالتك محلياً فقط ويمكنك نسخه.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <a class="brand brand--footer" href="index.html">
+        <span class="brand__mark" aria-hidden="true">L.H<span class="brand__star">✦</span></span>
+        <span class="brand__name">لين عبدالرحمن هلال</span>
+      </a>
+      <p>طالبة جامعية في تخصص التصميم والبرمجيات</p>
+      <a class="footer__top" href="#top">العودة إلى الأعلى ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
